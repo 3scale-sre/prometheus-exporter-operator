@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - bundle/manifests/**
+  workflow_dispatch:
 
 jobs:
   check:
@@ -31,14 +32,15 @@ jobs:
     if: needs.check.outputs.stable-release != ''
     name: Build and push the stable release images for the operator and the bundle
     needs: check
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     env:
       RELEASE: ${{ needs.check.outputs.stable-release }}
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - uses: actions/checkout@v4.2.2
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - uses: actions/cache@v4.1.2
+      - uses: actions/cache@v4
         with:
           key: ${{ runner.os }}-bin
           path: ./bin
