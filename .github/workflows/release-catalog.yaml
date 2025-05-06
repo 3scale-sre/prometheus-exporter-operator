@@ -14,9 +14,10 @@ jobs:
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - uses: actions/checkout@v4.2.2
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - uses: actions/cache@v4.1.2
+      - uses: actions/cache@v4
         with:
           key: ${{ runner.os }}-bin
           path: ./bin
