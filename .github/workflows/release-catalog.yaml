@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - catalog/**/stable-channel.yaml
+  workflow_dispatch:
 
 jobs:
   catalog:
