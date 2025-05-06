@@ -7,5 +7,5 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
 - name: controller
-  newName: quay.io/3scale/prometheus-exporter-operator
-  newTag: v0.9.0
+  newName: quay.io/3scale-sre/prometheus-exporter-operator
+  newTag: v0.9.1
