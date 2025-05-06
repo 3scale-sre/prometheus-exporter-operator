@@ -10,7 +10,7 @@ on:
 jobs:
   check:
     name: Check if it's a stable release
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     outputs:
       stable-release: ${{ env.NEW_RELEASE }}
     steps:
