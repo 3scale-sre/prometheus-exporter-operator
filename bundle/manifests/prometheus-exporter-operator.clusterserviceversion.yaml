@@ -309,8 +309,8 @@ spec:
   - name: GitHub
     url: https://github.com/3scale-sre/prometheus-exporter-operator
   maintainers:
-  - email: 3scale-operations@redhat.com
-    name: 3scale Ops
+  - email: 3scale-sre+olm@redhat.com
+    name: Red Hat 3scale SRE
   maturity: alpha
   provider:
     name: Red Hat
