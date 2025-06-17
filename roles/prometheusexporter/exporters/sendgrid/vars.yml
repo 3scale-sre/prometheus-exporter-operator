@@ -1,7 +1,7 @@
 ---
 # Exporter
-image_name: "chatwork/sendgrid-stats-exporter"
-image_version: "v0.0.10"
+image_name: "quay.io/3scale-sre/sendgrid-stats-exporter"
+image_version: "v0.1.0"
 port: 9154
 liveness_probe_timeout_seconds: 3
 liveness_probe_period_seconds: 15

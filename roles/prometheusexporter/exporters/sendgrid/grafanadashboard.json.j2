@@ -77,7 +77,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "sendgrid_requests{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
+          "expr": "sendgrid_requests_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
           "instant": false,
           "interval": "",
           "legendFormat": "",
@@ -137,7 +137,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "sendgrid_processed{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
+          "expr": "sendgrid_processed_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
           "instant": false,
           "interval": "",
           "legendFormat": "",
@@ -197,7 +197,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "sendgrid_delivered{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
+          "expr": "sendgrid_delivered_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
           "instant": false,
           "interval": "",
           "legendFormat": "",
@@ -257,7 +257,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "sendgrid_deferred{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
+          "expr": "sendgrid_deferred_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
           "instant": false,
           "interval": "",
           "legendFormat": "",
@@ -317,7 +317,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "sendgrid_blocks{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
+          "expr": "sendgrid_blocks_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
           "instant": false,
           "interval": "",
           "legendFormat": "",
@@ -377,7 +377,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "sendgrid_bounces{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
+          "expr": "sendgrid_bounces_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
           "instant": false,
           "interval": "",
           "legendFormat": "",
@@ -437,7 +437,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "sendgrid_bounce_drops{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
+          "expr": "sendgrid_bounce_drops_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
           "instant": false,
           "interval": "",
           "legendFormat": "",
@@ -497,7 +497,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "sendgrid_invalid_emails{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
+          "expr": "sendgrid_invalid_emails_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
           "instant": false,
           "interval": "",
           "legendFormat": "",
@@ -565,7 +565,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "sendgrid_processed{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}/ sendgrid_requests{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
+          "expr": "sendgrid_processed_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}/ sendgrid_requests_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
           "interval": "",
           "legendFormat": "Delivered",
           "range": true,
@@ -624,7 +624,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "sendgrid_spam_reports{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
+          "expr": "sendgrid_spam_reports_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
           "instant": false,
           "interval": "",
           "legendFormat": "",
@@ -684,7 +684,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "sendgrid_spam_report_drops{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
+          "expr": "sendgrid_spam_report_drops_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
           "instant": false,
           "interval": "",
           "legendFormat": "",
@@ -744,7 +744,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "sendgrid_opens{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
+          "expr": "sendgrid_opens_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
           "instant": false,
           "interval": "",
           "legendFormat": "",
@@ -804,7 +804,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "sendgrid_unique_opens{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
+          "expr": "sendgrid_unique_opens_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
           "instant": false,
           "interval": "",
           "legendFormat": "",
@@ -864,7 +864,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "sendgrid_clicks{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
+          "expr": "sendgrid_clicks_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
           "instant": false,
           "interval": "",
           "legendFormat": "",
@@ -924,7 +924,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "sendgrid_unique_clicks{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
+          "expr": "sendgrid_unique_clicks_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
           "instant": false,
           "interval": "",
           "legendFormat": "",
@@ -984,7 +984,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "sendgrid_unsubscribes{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
+          "expr": "sendgrid_unsubscribes_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
           "instant": false,
           "interval": "",
           "legendFormat": "",
@@ -1044,7 +1044,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "sendgrid_unsubscribe_drops{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
+          "expr": "sendgrid_unsubscribe_drops_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}",
           "instant": false,
           "interval": "",
           "legendFormat": "",
@@ -1126,7 +1126,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "increase(sendgrid_blocks{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}[$interval])",
+          "expr": "increase(sendgrid_blocks_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}[$interval])",
           "instant": false,
           "interval": "",
           "legendFormat": "ISP block",
@@ -1136,7 +1136,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "increase(sendgrid_deferred{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}[$interval])",
+          "expr": "increase(sendgrid_deferred_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}[$interval])",
           "hide": false,
           "instant": false,
           "interval": "",
@@ -1147,7 +1147,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "increase(sendgrid_delivered{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}[$interval])",
+          "expr": "increase(sendgrid_delivered_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}[$interval])",
           "hide": false,
           "instant": false,
           "interval": "",
@@ -1158,7 +1158,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "increase(sendgrid_invalid_emails{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}[$interval])",
+          "expr": "increase(sendgrid_invalid_emails_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}[$interval])",
           "hide": false,
           "interval": "",
           "legendFormat": "Malformed/Invalid email address",
@@ -1168,7 +1168,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "increase(sendgrid_requests{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}[$interval])",
+          "expr": "increase(sendgrid_requests_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}[$interval])",
           "hide": false,
           "interval": "",
           "legendFormat": "Emails Requests for delivery",
@@ -1178,7 +1178,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "increase(sendgrid_processed{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}[$interval])",
+          "expr": "increase(sendgrid_processed_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"}[$interval])",
           "hide": false,
           "interval": "",
           "legendFormat": "Emails Processed",
@@ -1262,7 +1262,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "increase(sendgrid_spam_report_drops{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"} [$interval])",
+          "expr": "increase(sendgrid_spam_report_drops_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"} [$interval])",
           "interval": "",
           "legendFormat": "Dropped due to previously marked as spam",
           "range": true,
@@ -1271,7 +1271,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "increase(sendgrid_spam_reports{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"} [$interval])",
+          "expr": "increase(sendgrid_spam_reports_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"} [$interval])",
           "hide": false,
           "interval": "",
           "legendFormat": "Marked as spam",
@@ -1355,7 +1355,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "increase(sendgrid_unique_clicks{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"} [$interval])",
+          "expr": "increase(sendgrid_unique_clicks_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"} [$interval])",
           "interval": "",
           "legendFormat": "User cliked links",
           "range": true,
@@ -1364,7 +1364,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "increase(sendgrid_unique_opens{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"} [$interval])",
+          "expr": "increase(sendgrid_unique_opens_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"} [$interval])",
           "hide": false,
           "interval": "",
           "legendFormat": "User opened email",
@@ -1447,7 +1447,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "increase(sendgrid_bounce_drops{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"} [$interval])",
+          "expr": "increase(sendgrid_bounce_drops_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"} [$interval])",
           "interval": "",
           "legendFormat": "Email drop because of a bounce",
           "range": true,
@@ -1456,7 +1456,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "increase(sendgrid_bounces{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"} [$interval])",
+          "expr": "increase(sendgrid_bounces_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"} [$interval])",
           "hide": false,
           "interval": "",
           "legendFormat": "Bounced",
@@ -1540,7 +1540,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "increase(sendgrid_unsubscribe_drops{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"} [$interval])",
+          "expr": "increase(sendgrid_unsubscribe_drops_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"} [$interval])",
           "interval": "",
           "legendFormat": "Email drop because user unsubscribed",
           "range": true,
@@ -1549,7 +1549,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "increase(sendgrid_unsubscribes{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"} [$interval])",
+          "expr": "increase(sendgrid_unsubscribes_total{namespace=\"$namespace\", prometheus_exporter=\"$prometheus_exporter\"} [$interval])",
           "hide": false,
           "interval": "",
           "legendFormat": "User unsubscribed",
@@ -1616,7 +1616,7 @@
       {
         "allValue": null,
         "datasource": "${datasource}",
-        "definition": "label_values(sendgrid_delivered{namespace=\"$namespace\"}, prometheus_exporter)",
+        "definition": "label_values(sendgrid_delivered_total{namespace=\"$namespace\"}, prometheus_exporter)",
         "description": null,
         "error": null,
         "hide": 0,
@@ -1626,7 +1626,7 @@
         "name": "prometheus_exporter",
         "options": [],
         "query": {
-          "query": "label_values(sendgrid_delivered{namespace=\"$namespace\"}, prometheus_exporter)",
+          "query": "label_values(sendgrid_delivered_total{namespace=\"$namespace\"}, prometheus_exporter)",
           "refId": "StandardVariableQuery"
         },
         "refresh": 1,
