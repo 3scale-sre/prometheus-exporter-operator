@@ -6,31 +6,31 @@ spec:
   groups:
     - name: prometheus-exporter-sendgrid.rules
       rules:
-      - alert: SendgridDown
-        expr: absent(sendgrid_delivered)
-        for: 5m
-        labels:
-          severity: critical
-        annotations:
-          message: "Sendgrid {{ $labels.prometheus_exporter }} is DOWN"
-      - alert: SendgridRequestsHigh
-        expr: sendgrid_requests > 10000
-        for: 5m
-        labels:
-          severity: warning
-        annotations:
-          message: "Sendgrid {{ $labels.prometheus_exporter }} requests emails is High above contracted plan"
-      - alert: SendgridSpamReportsHigh
-        expr: sendgrid_spam_reports > 100
-        for: 5m
-        labels:
-          severity: warning
-        annotations:
-          message: "Sendgrid {{ $labels.prometheus_exporter }} spam reports emails (marked as spam) is High"
-      - alert: SendgridBlocksHourlyRateHigh
-        expr: increase(sendgrid_blocks{}[1h]) > 20
-        for: 5m
-        labels:
-          severity: warning
-        annotations:
-          message: "Sendgrid {{ $labels.prometheus_exporter }}blocks hourly rate is High"
+        - alert: SendgridDown
+          expr: absent(sendgrid_delivered_total)
+          for: 5m
+          labels:
+            severity: critical
+          annotations:
+            message: "Sendgrid {{ $labels.prometheus_exporter }} is DOWN"
+        - alert: SendgridRequestsHigh
+          expr: sendgrid_requests_total > 10000
+          for: 5m
+          labels:
+            severity: warning
+          annotations:
+            message: "Sendgrid {{ $labels.prometheus_exporter }} requests emails is High above contracted plan"
+        - alert: SendgridSpamReportsHigh
+          expr: sendgrid_spam_reports_total > 100
+          for: 5m
+          labels:
+            severity: warning
+          annotations:
+            message: "Sendgrid {{ $labels.prometheus_exporter }} spam reports emails (marked as spam) is High"
+        - alert: SendgridBlocksHourlyRateHigh
+          expr: increase(sendgrid_blocks_total{}[1h]) > 20
+          for: 5m
+          labels:
+            severity: warning
+          annotations:
+            message: "Sendgrid {{ $labels.prometheus_exporter }}blocks hourly rate is High"
