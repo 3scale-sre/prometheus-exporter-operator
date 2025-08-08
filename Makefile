@@ -343,4 +343,4 @@ kind-deploy: kustomize $(KIND) ## Deploys the operator in the k8s kind cluster.
 
 test-e2e: export KUBECONFIG = ${PWD}/kubeconfig
 test-e2e: kind-create kustomize kind-deploy $(KUTTL) ## Run kuttl e2e tests in the k8s kind cluster.
-	$(KUTTL)
+	$(KUTTL) test
